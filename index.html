@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pabili Burger</title>
+    <link rel="stylesheet" href="handson.css"> 
+</head>
+<body>
+
+        <div class="header-container" style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+            <div>
+            <h1 style="color: white; margin: 0;">Burgir</h1>
+            <h3 style="color: white; margin: 0;">Best Comfort Food in Town</h3>
+            </div>
+        </div>
+    </div>
+    <form>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" style="font-size: 24px;">Customer Information</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border">
+                            <label for="fullname">Name</label>
+                        </td>
+                        <td>
+                            <input type="text" name="name" id="name" placeholder="Full Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border">
+                            <label for="address">Address</label>
+                        </td>
+                        <td>
+                            <input type="text" name="address" id="address" placeholder="Complete Address">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border">
+                            <label for="number">Contact Number</label>
+                        </td>
+                        <td>
+                            <input type="number" name="number" id="number" placeholder="Contact Number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="description">Description</label>
+                        </td>
+                        <td>
+                            <textarea name="description" id="description" placeholder="Special Instructions" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border" colspan="">
+                            <label for="date">Time & Date</label>
+                        </td>
+                        <td>
+                            <input type="datetime-local" name="date" id="date">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </form>
+
+    <form>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2" style="font-size: 24px;">Customer Order Sheet</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="">
+                            <label for="burger">Burger</label>
+                        </td>
+                        <td rowspan="">
+                            <select name="burger" id="burger">
+                                <option value="choose">Choose Here</option>
+                                <option value="single">Single Patty</option>
+                                <option value="double">Double Patty</option>
+                                <option value="none">None</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="toppings">Toppings</label>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="checkbox" name="cheese" id="cheese">
+                                <label for="cheese">Cheese</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="tomato" id="tomato">
+                                <label for="tomato">Tomato</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="onion" id="onion">
+                                <label for="onion">Onion</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="cucumber" id="cucumber">
+                                <label for="cucumber">Cucumber</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="bacon" id="bacon">
+                                <label for="bacon">Bacon</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="bun">Bun</label>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="radio" name="whitebun" id="whitebun">
+                                <label for="whitebun">White bun</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="wheat" id="wheat">
+                                <label for="wheat">Wheat bun</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="honey" id="honey">
+                                <label for="honey">Honey Oat</label>
+                            </div>
+                            <div></div>
+                                <input type="radio" name="sugarfree" id="sugarfree">
+                                <label for="sugarfree">Sugar Free</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="border">
+                            <label for="quantity">Quantity</label>
+                        </td>
+                        <td>
+                            <input type="number" name="number" id="number" placeholder="quantity">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="">
+                            <label for="pasta">Pasta</label>
+                        </td>
+                        <td rowspan="">
+                            <select name="pasta" id="pasta">
+                                <option value="choose">Choose Here</option>
+                                <option value="carb">Carbonara</option>
+                                <option value="pesto">Pesto</option>
+                                <option value="italy">Italian Spaghetti</option>
+                                <option value="agli">Agliolio</option>
+                                <option value="charlie">Charlie Chan</option>
+                                <option value="none">None</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="border">
+                            <label for="quantity">Quantity(per box)</label>
+                        </td>
+                        <td>
+                            <input type="number" name="number" id="number" placeholder="quantity">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="bun">Fries</label>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="radio" name="small" id="small">
+                                <label for="small">Small</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="medium" id="medium">
+                                <label for="medium">Medium</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="large" id="large">
+                                <label for="large">Large</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Flavor</td>
+                            <td>
+                            <select name="fries_flavor">
+                                <option value="choose">Choose Here</option>
+                                <option value="BBQ">BBQ</option>
+                                <option value="Cheese">Cheese</option>
+                                <option value="SourCream">Sour Cream</option>
+                                <option value="chili_cheese">Chili Cheese</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="border">
+                            <label for="quantity">Quantity</label>
+                        </td>
+                        <td>
+                            <input type="number" name="number" id="number" placeholder="quantity">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Drinks</td>
+                            <td>
+                            <select name="soda">
+                                <option value="choose">Choose Here</option>
+                                <option value="coke">Coke</option>
+                                <option value="pepsi">Pepsi</option>
+                                <option value="sprite">Sprite</option>
+                                <option value="royal">Royal</option>
+                                <option value="aw">A&W RootBeer</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="drinkSize">Drink Size</label>
+                        </td>
+                        <td>
+                            <div>
+                                <input type="radio" name="small" id="small">
+                                <label for="small">Small</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="medium" id="medium">
+                                <label for="medium">Medium</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="large" id="large">
+                                <label for="large">Large</label>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="border">
+                            <label for="quantity">Quantity</label>
+                        </td>
+                        <td>
+                            <input type="number" name="number" id="number" placeholder="quantity">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Delivery Option:</td>
+                        <td>
+                          <input type="radio" name="delivery" value="Delivery"> Delivery
+                          <input type="radio" name="delivery" value="Pick-up"> Pick-up
+                        </td>
+                      </tr>
+
+                    <tr>
+                        <td>
+                            <label for="feedback">Feedback</label>
+                        </td>
+                        <td>
+                            <textarea name="feedback" id="feedback" placeholder="Feedback" rows="5"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                          <input type="submit" value="Submit Form">
+                          <input type="reset" value="Clear Form">
+                        </td>
+                      </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
+
+<footer style="text-align: center; margin-top: 20px; color: white;">
+    <p>&copy; 2023 Pabili Burger. All rights reserved.</p>
+    <p> Contact us : +639 123 456 78</p>
+</footer>

@@ -1,0 +1,36 @@
+.container {
+    margin: 0 auto;
+    width: 720px;
+    border: 0px solid black;
+    text-align: center;
+    
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+td {
+    text-align: center;
+    border: 2px solid black;
+    padding: 4px;
+}
+
+th {
+    padding: 4px;
+    background-color: #E07A5F;
+}
+
+body{
+    background-color: #690B22;
+    background-image: url('burger.png');
+    
+}
+
+.header-container {
+        text-align: center;
+        padding: 20px;
+    }
